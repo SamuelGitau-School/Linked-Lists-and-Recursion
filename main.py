@@ -1,4 +1,5 @@
-from linked_list import LinkedList
+from linked_list import LinkedList 
+
 
 if __name__ == "__main__":
     # 1) Create a LinkedList instance
