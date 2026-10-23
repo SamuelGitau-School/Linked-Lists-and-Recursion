@@ -1,27 +1,27 @@
 from linked_list import LinkedList
 
 if __name__ == "__main__":
-    """
-    Use this file to create a LinkedList instance and perform operations 
-    like insertion, recursion-based sum, search, and reverse.
-    """
+    # 1) Create a LinkedList instance
+    roster = LinkedList()
 
-    # TODO: 1) Create a LinkedList instance
-    
+    # 2) Insert some sample data
+    roster.insert_at_front(103)
+    roster.insert_at_front(102)
+    roster.insert_at_front(101)
+    roster.insert_at_end(104)
 
-    # TODO: 2) Insert some sample data using insert_at_front or insert_at_end
-    
-    # TODO: 3) Display the list to verify insertion
-    
+    # 3) Display the list to verify insertion
+    print("Roster:")
+    roster.display()
 
-    # TODO: 4) Call recursive_sum and print the result
-    
+    # 4) Recursive sum
+    print("Sum of IDs:", roster.recursive_sum())
 
-    # TODO: 5) Call recursive_search with a target and print result
-    
+    # 5) Recursive search
+    print("Is 103 on the roster?", roster.recursive_search(103))
+    print("Is 999 on the roster?", roster.recursive_search(999))
 
-    # TODO: 6) Call recursive_reverse, then display the reversed list
-    
-
-
-# 
+    # 6) Reverse, then display
+    roster.recursive_reverse()
+    print("Reversed roster:")
+    roster.display()
